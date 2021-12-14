@@ -90,7 +90,11 @@ const Cart = () => {
 
                 <div className="total">
                   <div className="text_total">Total</div>
-                  <br /> $ {PrecioTotal}{" "}
+                  <br />
+
+                  <div>
+                    $ {PrecioTotal}
+                  </div>
                 </div>
               </div>
             )}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const CheckOut = () => {
   const { carrito, Setcarrito } = useContext(contexto);
   const { PrecioTotal } = useContext(contexto);
- 
+
 
   const [id, setId] = useState("");
 
@@ -299,9 +299,12 @@ const CheckOut = () => {
             </div>
           </div>
 
-          <button type="submit" className="btnComprar">
-            Finalizar Compra
-          </button>
+          <div className="conte_btn_comprar_fin">
+            <button type="submit" className="btnComprar">
+              Finalizar Compra
+            </button>
+          </div>
+
         </form>
       </>
     );

@@ -358,9 +358,11 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 90px;
+  padding-top: 90px;
+  text-align: center;
 }
 
 .iconosSocial {
@@ -391,7 +393,7 @@ span {
 
 .textoFooter {
   color: white;
-  line-height: 40px;
+  line-height: 20px;
   font-size: 1.2vmax;
 }
 .contenedorCarrito {
@@ -894,7 +896,7 @@ select {
   align-items: center;
   padding: 10px;
   margin: 20px;
-  border-radius: 100%;
+  border-radius: 50%;
 
   position: fixed;
   top: 0;
@@ -981,7 +983,47 @@ select {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .contenedorSesiones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2em;
+    gap: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mensaje_enviado {
+ 
+  width: 75%;
+ 
+}
+}
+
 @media (min-width: 810px) {
+
+  .contenedorSesiones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2em;
+    gap: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
   .ContenedorCarrito {
     display: flex;
     flex-direction: row;
@@ -1049,9 +1091,32 @@ select {
     flex-direction: row;
     justify-content: center;
   }
+
+  .mensaje_enviado {
+ 
+    width: 75%;
+   
+}
 }
 
 @media (min-width: 1280px) {
+
+
+  .contenedorSesiones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2em;
+    gap: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
   span {
     font-size: 20px;
     color: black;
@@ -1221,8 +1286,8 @@ select {
 .item_label {
   min-width: 250px;
   display: flex;
-
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
 
   padding: 16px;
 }
@@ -1264,7 +1329,7 @@ select {
 
 .contenedor_textArea {
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding: 16px;
 }
 
@@ -1320,6 +1385,32 @@ select {
   }
 }
 
+
+
+.mensaje_enviado {
+  background: #91d21e;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 85%;
+  padding: 30px;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.botonInicio_contacto {
+  margin-bottom: 100px;
+}
+
+.conte_btn_comprar_fin{
+  width: 100%;
+  text-align: center;
+}
+
+
 @media (min-width: 1280px) {
   .form {
     margin: 0 auto;
@@ -1333,22 +1424,17 @@ select {
   .label_formulario {
     width: 10%;
   }
-}
-
-.mensaje_enviado {
-  background: #91d21e;
-  margin: 0 auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-  width: 35%;
-  padding: 30px;
-  font-size: 20px;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  color: white;
-}
-
-.botonInicio_contacto {
-  margin-bottom: 100px;
+  .mensaje_enviado {
+    background: #91d21e;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 50%;
+    padding: 30px;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: white;
+  }
 }
