@@ -15,7 +15,7 @@ const Item = ({ sesiones }) => {
         <Link to={`/sesiones/${sesiones.id}`}>
        
           <button className="verMas">
-          <div class="material-icons arrow_back_ios  arrow"> arrow_back_ios</div>
+          <div class="material-icons navigate_next "> navigate_next</div>
             Ver más</button>
         </Link>
       </div>

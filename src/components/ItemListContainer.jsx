@@ -28,7 +28,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <h2>seciones</h2>
+      <h2>sesiones</h2>
 
       <div className="contenedorSesiones">
         <ItemList sesiones={sesiones} />

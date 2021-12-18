@@ -90,7 +90,7 @@ const Contacto = () => {
   if (id) {
     return (
       <div>
-        
+
         <div className="mensaje_enviado">Su correo se a enviado correctamente!</div>
         <div className="item_boton_orden">
           <Link to="/bienvenidos" className="link">
@@ -127,91 +127,100 @@ const Contacto = () => {
                   nos sea posible.
                 </h4>
 
-                <div className="item_label">
-                  <label className="label_formulario">Nombre</label>
-                  <input
-                    type="text"
-                    name="nombre"
-                    className="inputs_formulario"
-                    onChange={actualizarState}
-                    value={nombre}
-                  />
+                <div className="conte_form">
+                  <div className="item_label">
+                    <label className="label_formulario">Nombre</label>
+                    <input
+                      type="text"
+                      name="nombre"
+                      className="inputs_formulario"
+                      onChange={actualizarState}
+                      value={nombre}
+                    />
+                  </div>
+
+                  <div className="item_label">
+                    <label className="label_formulario">Telefono</label>
+                    <input
+                      type="number"
+                      name="telefono"
+                      className="inputs_formulario"
+                      onChange={actualizarState}
+                      value={telefono}
+                    />
+                  </div>
+
+                  <div className="item_label">
+                    <label className="label_formulario">Correo</label>
+                    <input
+                      type="email"
+                      name="correo"
+                      className="inputs_formulario"
+                      onChange={actualizarState}
+                      value={correo}
+                    />
+                  </div>
+
+                  <div className="cont_radio">
+                    <label className="titulo_formulario_radio">
+                      Estoy interesado/a
+                    </label>
+
+                    <div>
+                      <div className="cntPago">
+                        Consulta
+                        <input
+                          onChange={actualizarState}
+                          type="radio"
+                          name="consulta"
+                          className="inputs_radio"
+                          value="consulta"
+                          checked={consulta === "consulta"}
+                        />
+                      </div>
+
+                      <div className="cntPago">
+                        Reserva
+                        <input
+                          onChange={actualizarState}
+                          type="radio"
+                          name="consulta"
+                          className="inputs_radio"
+                          value="Reserva"
+                          checked={consulta === "Reserva"}
+                        />
+                      </div>
+                    </div>
+
+                  </div>
+                  <div className="contenedor_textArea">
+                    <label className="label_formulario">Mensaje</label>
+                    <textarea
+                      type="text-area"
+                      name="mensaje"
+                      className="textarea"
+                      onChange={actualizarState}
+                      value={mensaje}
+                    />
+                  </div>
                 </div>
 
-                <div className="item_label">
-                  <label className="label_formulario">Telefono</label>
-                  <input
-                    type="number"
-                    name="telefono"
-                    className="inputs_formulario"
-                    onChange={actualizarState}
-                    value={telefono}
-                  />
-                </div>
-
-                <div className="item_label">
-                  <label className="label_formulario">Correo</label>
-                  <input
-                    type="email"
-                    name="correo"
-                    className="inputs_formulario"
-                    onChange={actualizarState}
-                    value={correo}
-                  />
-                </div>
               </div>
+
             </div>
 
-            <div className="cont_radio">
-              <label className="titulo_formulario_radio">
-                Estoy interesado/a
-              </label>
-              <div>
-                <div className="cntPago">
-                  Consulta
-                  <input
-                    onChange={actualizarState}
-                    type="radio"
-                    name="consulta"
-                    className="inputs_radio"
-                    value="consulta"
-                    checked={consulta === "consulta"}
-                  />
-                </div>
 
-                <div className="cntPago">
-                  Reserva
-                  <input
-                    onChange={actualizarState}
-                    type="radio"
-                    name="consulta"
-                    className="inputs_radio"
-                    value="Reserva"
-                    checked={consulta === "Reserva"}
-                  />
-                </div>
-              </div>
-            </div>
 
-            <div className="contenedor_textArea">
-            <label className="label_formulario">Mensaje</label>
-              <textarea
-                type="text-area"
-                name="mensaje"
-                className="textarea"
-                onChange={actualizarState}
-                value={mensaje}
-              />
-            </div>
+
           </div>
 
           <div className="item_botonEnviar">
-          <button type="submit" className="btnComprar">
-            Enviar
-          </button>
+            <button type="submit" className="btnComprar">
+              Enviar
+            </button>
           </div>
 
-         
+
         </form>
       </>
     );

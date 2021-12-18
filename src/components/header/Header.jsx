@@ -7,7 +7,7 @@ const Header = () => {
       <div className="contLogo">
         <img className="logo" src={Logo} />
         <p className="encabezadoTitulo">
-          Fotógrafia de Familias - Bebes - Niños
+         - Fotógrafia de Familias - Bebes - Niños -
         </p>
       </div>
     </Fragment>
