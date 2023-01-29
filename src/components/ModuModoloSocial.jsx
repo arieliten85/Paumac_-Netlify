@@ -3,8 +3,9 @@ const ModuModoloSocial = () => {
     <div className="ContenedorRedes">
       <h3>Te espero para ver mucho más</h3>
       <div className="contenedorIconos">
-        <span className="material-icons iconosSocial whatsapp"> whatsapp </span>
-        <span className="material-icons iconosSocial facebook"> facebook </span>
+        <span className="material-icons iconosSocial facebook"
+        style={{padding:"0px"}}
+        > facebook </span>
       </div>
 
       <p>Gracias por visitar mi página</p>

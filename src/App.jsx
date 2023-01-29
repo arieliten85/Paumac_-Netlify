@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./components/css/App.css";
+
 import Header from "./components/header/Header";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -14,7 +14,7 @@ import Footer from "./components/Footer"
 import Cart from "./components/Cart"
 import CheckOut from "./components/CheckOut"
 import Promociones from "./components/Promocion";
-import ModuModoloSocial from "./components/ModoloSocial";
+import ModuModoloSocial from "./components/ModuModoloSocial";
 import { CustomProvider } from "./UseContext/CardContxt"
 import Navegacion from "./components/NavBar/Navegacion";
 

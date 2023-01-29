@@ -5,9 +5,10 @@ const Inicio = () => {
     <Fragment>
       <h2>Geleria</h2>
 
-      <ul className="contenedorGrid">
+     
         <GaleriaContenedor />
-      </ul>
+     
+
     </Fragment>
   );
 };

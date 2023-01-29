@@ -1,4 +1,4 @@
-import img from "./img2/promoNavidad.jpg";
+import img from "../img/promoNavidad.jpg";
 
 const Promocion = () => {
   return (

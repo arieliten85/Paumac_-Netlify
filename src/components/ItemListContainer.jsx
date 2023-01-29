@@ -30,9 +30,21 @@ const ItemListContainer = () => {
     <>
       <h2>sesiones</h2>
 
+      {sesiones.length === 0 ?
+
+        <div id="spinner" style={{textAlign:"center"}}>
+          
+        </div>
+
+      :
+
       <div className="contenedorSesiones">
-        <ItemList sesiones={sesiones} />
+         <ItemList sesiones={sesiones} />
       </div>
+     
+      }
+
+    
     </>
   );
 };

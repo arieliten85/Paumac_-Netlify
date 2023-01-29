@@ -18,15 +18,37 @@ const Galeria = () => {
 
   return (
     <Fragment>
-      {service.map((itemProducto) => (
-        <li key={itemProducto.id} className="cardGaleria">
-          <Link to={`/ImgMaxim/${itemProducto.id}`}>
-            <dir className="contenedorImgGaleria">
-              <img className="imgGaleria" src={itemProducto.Imagenes} />
-            </dir>
-          </Link>
-        </li>
-      ))}
+
+
+        {!service ?
+        <div  style={{height:"100vh" }}>
+            <div id="spinner" style={{textAlign:"center" }}> </div>
+        </div>
+      
+
+        :
+
+        <ul className="contenedorGrid">
+          {
+            service.map((itemProducto) => (
+              <li key={itemProducto.id} className="cardGaleria">
+                <Link to={`/ImgMaxim/${itemProducto.id}`}>
+                  <dir className="contenedorImgGaleria">
+                    <img className="imgGaleria" src={itemProducto.Imagenes} />
+                  </dir>
+                </Link>
+              </li>
+              ))
+          }
+
+
+        </ul>
+        
+
+      
+        }
+
+    
     </Fragment>
   );
 };
